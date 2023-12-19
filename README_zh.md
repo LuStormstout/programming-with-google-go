@@ -1,3 +1,5 @@
+🌍 *[English](README.md)* . *[简体中文](README_zh.md)* . *[日本語](README_ja.md)*
+
 # Go 编程学习仓库
 
 该仓库致力于记录我在 [Coursera](https://www.coursera.org/specializations/google-golang) 上学习《Programming with Google Go》课程的学习过程。该课程分为三个部分：

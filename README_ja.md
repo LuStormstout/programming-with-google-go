@@ -1,3 +1,5 @@
+🌍 *[English](README.md)* . *[简体中文](README_zh.md)* . *[日本語](README_ja.md)*
+
 # Go プログラミング学習リポジトリ
 
 このリポジトリは、Coursera での「[Google Go プログラミング](https://www.coursera.org/specializations/google-golang)」コースを学習する過程を文書化するために作成されました。このコースは次の3つのパートから構成されています：
