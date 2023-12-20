@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-
 	// 指针
 	pointer()
 
