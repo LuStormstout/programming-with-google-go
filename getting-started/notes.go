@@ -3,10 +3,15 @@ package main
 import "fmt"
 
 func main() {
+
+	// 指针
 	pointer()
+
+	// 作用域
 	scope()
 	scope2()
 
+	// 垃圾回收
 	var y *int
 	y = foo()
 	fmt.Printf("%d", y)
