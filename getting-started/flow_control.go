@@ -10,9 +10,9 @@ func main() {
 	var x int
 	x = rand.Intn(8)
 	if x >= 5 {
-		println("x is greater than 5, x = ", x)
+		println("x is greater than or equal to 5, x = ", x)
 	} else {
-		println("x is less than or equal to 5, x = ", x)
+		println("x is less than 5, x = ", x)
 	}
 
 	// ------------------------------ switch --------------------------------
@@ -34,6 +34,17 @@ func main() {
 		fmt.Println("x = 2")
 	case 3:
 		fmt.Println("x = 3")
+	default:
+		fmt.Println("No matching case, x = ", x)
+	}
+
+	switch {
+	case x > 5:
+		fmt.Println("x is greater than 5, x = ", x)
+	case x < 5:
+		fmt.Println("x is less than 5, x = ", x)
+	case x == 5:
+		fmt.Println("x is equal to 5, x = ", x)
 	default:
 		fmt.Println("No matching case, x = ", x)
 	}
