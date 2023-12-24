@@ -104,6 +104,17 @@ func main() {
 		fmt.Println(i)
 	}
 
+	// ------------------------------ scan --------------------------------
+	fmt.Println("--------------------")
+	fmt.Println("Scan")
+	var y int // 声明一个int类型的变量，默认值为0
+	fmt.Println("Please input a number:")
+	_, err := fmt.Scan(&y)
+	if err != nil {
+		fmt.Println("Scan error:", err)
+	}
+	fmt.Println("The number you input is:", y)
+
 	// ------------------------------ return --------------------------------
 
 	// ------------------------------ defer --------------------------------
