@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 /*
 编写一个程序，提示用户输入一个字符串。程序将在输入的字符串中搜索字符 'i'、'a' 和 'n'。
@@ -11,24 +14,20 @@ import "fmt"
 对于以下字符串，“ihhhhhn”、“ina”、“xian”，程序应打印“Not Found!”。
 */
 func main() {
+
 	var inputString string
 
 	fmt.Println("Enter a string:")
 	_, err := fmt.Scan(&inputString)
+
 	if err != nil {
 		fmt.Println("Scan failed, err:", err)
 	}
 
-	if len(inputString) < 3 {
+	inputString = strings.ToLower(inputString)
+	if strings.HasPrefix(inputString, "i") && strings.Contains(inputString, "a") && strings.HasSuffix(inputString, "n") {
+		fmt.Println("Found!")
+	} else {
 		fmt.Println("Not Found!")
-		return
-	} else if inputString[1] == 'i' && inputString[len(inputString)-1] == 'n' {
-
-		for _, char := range inputString {
-			if char == 'a' || char == 'A' {
-				fmt.Println("Found!")
-				return
-			}
-		}
 	}
 }
